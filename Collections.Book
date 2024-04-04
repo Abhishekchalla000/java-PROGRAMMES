@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Book {
+	int id;
+	String name;
+	Book(int id,String name)
+	{
+		this.id=id;
+		this.name=name;
+	}
+
+	public static void main(String[] args) {
+		Book obj1=new Book(1,"Mahabharat");
+		Book obj2=new Book(2,"Ramayan");
+		Book obj3=new Book(3,"Bible");
+		
+		ArrayList<Book>obj=new ArrayList<Book>();
+		obj.add(obj1);
+		obj.add(obj2);
+		obj.add(obj3);
+		for(Book x:obj) 
+		{
+			//System.out.println(x);
+			System.out.println(x.id+" "+x.name);
+		}
+	}
+
+}
